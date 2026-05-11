@@ -1,0 +1,18 @@
+[gd_scene format=3 uid="uid://lw3ifkn3ejkf"]
+
+[ext_resource type="Script" uid="uid://bc4kqt4cdm8df" path="res://scripts/player.gd" id="1_4dohe"]
+[ext_resource type="Texture2D" uid="uid://synifn7ea4bl" path="res://kenney_space-shooter-remastered/PNG/playerShip1_green.png" id="1_72ieh"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_4dohe"]
+size = Vector2(30, 40)
+
+[node name="player" type="Area2D" unique_id=1896266920]
+script = ExtResource("1_4dohe")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=836426706]
+rotation = 1.5707964
+scale = Vector2(0.4, 0.4)
+texture = ExtResource("1_72ieh")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=373277912]
+shape = SubResource("RectangleShape2D_4dohe")
